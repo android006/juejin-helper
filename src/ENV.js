@@ -1,7 +1,28 @@
 module.exports = {
-  COOKIE: process.env.COOKIE,
-  EMAIL: process.env.EMAIL,
-  AUTHORIZATION_CODE: process.env.AUTHORIZATION_CODE,
-  DINGDING_WEBHOOK: process.env.DINGDING_WEBHOOK,
-  PUSHPLUS_TOKEN: process.env.PUSHPLUS_TOKEN,
+  USER: [
+    {
+      name: '不知名王友',
+      cookie: '_ga=GA1.2.203507865.1661237327; _gid=GA1.2.887789530.1661237327; _tea_utm_cache_2608=undefined; __tea_cookie_tokens_2608=%7B%22web_id%22%3A%227134959925378549288%22%2C%22user_unique_id%22%3A%227134959925378549288%22%2C%22timestamp%22%3A1661237327476%7D; passport_csrf_token=1e866c2def3bf209a4f72e1214cf05ac; passport_csrf_token_default=1e866c2def3bf209a4f72e1214cf05ac; n_mh=9-mIeuD4wZnlYrrOvfzG3MuT6aQmCUtmr8FxV8Kl8xY; sid_guard=649e1f81d674dc701e3e091b498441f2|1661237477|31536000|Wed,+23-Aug-2023+06:51:17+GMT; uid_tt=c69fc4e6ec08058abc61b0630dfa9fdc; uid_tt_ss=c69fc4e6ec08058abc61b0630dfa9fdc; sid_tt=649e1f81d674dc701e3e091b498441f2; sessionid=649e1f81d674dc701e3e091b498441f2; sessionid_ss=649e1f81d674dc701e3e091b498441f2; sid_ucp_v1=1.0.0-KGMyNTE4OGY0NDBmZTU4Mzc2M2ZkYzEyZmVlM2NlMzkxNTE5NGE5YjkKFgieo5CYmI2FARDl8ZGYBhiwFDgIQAEaAmxmIiA2NDllMWY4MWQ2NzRkYzcwMWUzZTA5MWI0OTg0NDFmMg; ssid_ucp_v1=1.0.0-KGMyNTE4OGY0NDBmZTU4Mzc2M2ZkYzEyZmVlM2NlMzkxNTE5NGE5YjkKFgieo5CYmI2FARDl8ZGYBhiwFDgIQAEaAmxmIiA2NDllMWY4MWQ2NzRkYzcwMWUzZTA5MWI0OTg0NDFmMg; _gat=1; MONITOR_WEB_ID=d5dd6f20-9c4b-4bac-a3d2-667123eefcb6'
+    },
+    {
+      name: '芝士培根章鱼小丸子',
+      cookie: '_tea_utm_cache_2608=undefined; __tea_cookie_tokens_2608=%7B%22web_id%22%3A%227134952151869015584%22%2C%22user_unique_id%22%3A%227134952151869015584%22%2C%22timestamp%22%3A1661235513424%7D; _ga=GA1.2.212917926.1661235513; _gid=GA1.2.1336000223.1661235514; passport_csrf_token=ed8df51d1f483fed4c261b63527ed60e; passport_csrf_token_default=ed8df51d1f483fed4c261b63527ed60e; _tea_utm_cache_2018=undefined; n_mh=Sm2LG1k3BnLbeJgGl_gLp5xQefLT1ZoEVPNnqcFP0ik; sid_guard=68c1ac8e80856096bd66271d8a8df9f1|1661235523|31536000|Wed,+23-Aug-2023+06:18:43+GMT; uid_tt=78eba9d92c63c99019a5e4c6328374cb; uid_tt_ss=78eba9d92c63c99019a5e4c6328374cb; sid_tt=68c1ac8e80856096bd66271d8a8df9f1; sessionid=68c1ac8e80856096bd66271d8a8df9f1; sessionid_ss=68c1ac8e80856096bd66271d8a8df9f1; sid_ucp_v1=1.0.0-KDY3ZGUwZmUyZDlhYzdiOWUxODFmNjZkOWQxMDE2YTc4OWJiZGQ4OWMKFwi3puGkmI3ZAxDD4pGYBhiwFDgCQO8HGgJsZiIgNjhjMWFjOGU4MDg1NjA5NmJkNjYyNzFkOGE4ZGY5ZjE; ssid_ucp_v1=1.0.0-KDY3ZGUwZmUyZDlhYzdiOWUxODFmNjZkOWQxMDE2YTc4OWJiZGQ4OWMKFwi3puGkmI3ZAxDD4pGYBhiwFDgCQO8HGgJsZiIgNjhjMWFjOGU4MDg1NjA5NmJkNjYyNzFkOGE4ZGY5ZjE; MONITOR_WEB_ID=19b60577-b5fc-4cbc-b8ab-4b632b3a182d'
+    },
+    {
+      name: '小帅哥快来玩咯',
+      cookie: '_tea_utm_cache_2608={%22utm_source%22:%22gold_browser_extension%22}; MONITOR_WEB_ID=0bc6ea78-a2ca-49f8-8a09-1514880ed3e6; _ga=GA1.2.1290951455.1661222687; _gid=GA1.2.1982205351.1661222687; _gat=1; n_mh=9-mIeuD4wZnlYrrOvfzG3MuT6aQmCUtmr8FxV8Kl8xY; sessionid=05aeb3e2e6561350a6ccfec620941522; sessionid_ss=05aeb3e2e6561350a6ccfec620941522; sid_guard=05aeb3e2e6561350a6ccfec620941522%7C1661235019%7C31536000%7CWed%2C+23-Aug-2023+06%3A10%3A19+GMT; sid_tt=05aeb3e2e6561350a6ccfec620941522; sid_ucp_v1=1.0.0-KDczMTA3MjllZmU4ZTMwNWIwNTUwMjM3MzA0ZjZiNTJiNGJjZWI5MjIKFgjXtrCS6I2eAxDL3pGYBhiwFDgIQAEaAmxmIiAwNWFlYjNlMmU2NTYxMzUwYTZjY2ZlYzYyMDk0MTUyMg; ssid_ucp_v1=1.0.0-KDczMTA3MjllZmU4ZTMwNWIwNTUwMjM3MzA0ZjZiNTJiNGJjZWI5MjIKFgjXtrCS6I2eAxDL3pGYBhiwFDgIQAEaAmxmIiAwNWFlYjNlMmU2NTYxMzUwYTZjY2ZlYzYyMDk0MTUyMg; uid_tt=a92f6dbcd582ab08063971ab21e43adc; uid_tt_ss=a92f6dbcd582ab08063971ab21e43adc; _tea_utm_cache_6587={%22utm_source%22:%22standalone%22%2C%22utm_medium%22:%22Pop-ups2%22%2C%22utm_campaign%22:%22extension_promotion%22}; passport_csrf_token=b050e70ee422ab5c28836083d39e976f; passport_csrf_token_default=b050e70ee422ab5c28836083d39e976f; __tea_cookie_tokens_2608=%257B%2522web_id%2522%253A%25227134897070536508932%2522%252C%2522user_unique_id%2522%253A%25227134897070536508932%2522%252C%2522timestamp%2522%253A1661222686518%257D'
+    },
+    {
+      name: 'Read 62990',
+      cookie: '_ga=GA1.2.533246729.1616558534; __tea_cookie_tokens_2608=%257B%2522user_unique_id%2522%253A%25226902997822212720135%2522%252C%2522web_id%2522%253A%25226902997822212720135%2522%252C%2522timestamp%2522%253A1642559139470%257D; n_mh=i_g0_IRUcQNkNWQNF2H8kYCOyFQ-tCvh5RFUzsgGzrA; sid_guard=967290ca084cc4b732ea602ad061734c%7C1655016140%7C31536000%7CMon%2C+12-Jun-2023+06%3A42%3A20+GMT; uid_tt=bdd6be4f0023c264cecaab679e56a792; uid_tt_ss=bdd6be4f0023c264cecaab679e56a792; sid_tt=967290ca084cc4b732ea602ad061734c; sessionid=967290ca084cc4b732ea602ad061734c; sessionid_ss=967290ca084cc4b732ea602ad061734c; sid_ucp_v1=1.0.0-KGFhODZiY2RmNTA3YTI0NmM4MjM5YTYxNTQ4NDFiZGVjMTJlYmNmNmIKFwiepdC__fWFBRDMlZaVBhiwFDgCQPEHGgJsZiIgOTY3MjkwY2EwODRjYzRiNzMyZWE2MDJhZDA2MTczNGM; ssid_ucp_v1=1.0.0-KGFhODZiY2RmNTA3YTI0NmM4MjM5YTYxNTQ4NDFiZGVjMTJlYmNmNmIKFwiepdC__fWFBRDMlZaVBhiwFDgCQPEHGgJsZiIgOTY3MjkwY2EwODRjYzRiNzMyZWE2MDJhZDA2MTczNGM; _tea_utm_cache_2608={%22utm_source%22:%22gold_browser_extension%22}; MONITOR_WEB_ID=6a8826d9-6dfc-4f96-aea7-f4a0b59b7b60'
+    },
+    {
+      name: '拖沓女天王',
+      cookie: '_ga=GA1.2.689319371.1661223979; _gid=GA1.2.814298641.1661223979; _tea_utm_cache_2608=undefined; __tea_cookie_tokens_2608=%7B%22web_id%22%3A%227134902604899403264%22%2C%22user_unique_id%22%3A%227134902604899403264%22%2C%22timestamp%22%3A1661223979769%7D; passport_csrf_token=32b2782367d913b21424769fa17e44fe; passport_csrf_token_default=32b2782367d913b21424769fa17e44fe; _tea_utm_cache_2018=undefined; n_mh=Eo1cCIhKTY-YWw1RL_ihyVjkNDCS97EqL9WKJOtl6M8; sid_guard=95e09aeefabfa4dddda7dd836ae5300a|1661223999|31536000|Wed,+23-Aug-2023+03:06:39+GMT; uid_tt=71698f0c45d53ecba45a39dd2790e809; uid_tt_ss=71698f0c45d53ecba45a39dd2790e809; sid_tt=95e09aeefabfa4dddda7dd836ae5300a; sessionid=95e09aeefabfa4dddda7dd836ae5300a; sessionid_ss=95e09aeefabfa4dddda7dd836ae5300a; sid_ucp_v1=1.0.0-KGY2ZTVlNmI1ZTI3OGUzNWEyNTg0ODQ2MTJiNmEzYjY1ODQxZGMwNzIKFwi99-Cn2I2eAxC_iJGYBhiwFDgCQO8HGgJsZiIgOTVlMDlhZWVmYWJmYTRkZGRkYTdkZDgzNmFlNTMwMGE; ssid_ucp_v1=1.0.0-KGY2ZTVlNmI1ZTI3OGUzNWEyNTg0ODQ2MTJiNmEzYjY1ODQxZGMwNzIKFwi99-Cn2I2eAxC_iJGYBhiwFDgCQO8HGgJsZiIgOTVlMDlhZWVmYWJmYTRkZGRkYTdkZDgzNmFlNTMwMGE; MONITOR_WEB_ID=40840324-f061-44c0-99a7-d63546f479ef'
+    }
+  ],
+  EMAIL: '',
+  AUTHORIZATION_CODE: '',
+  DINGDING_WEBHOOK: 'https://oapi.dingtalk.com/robot/send?access_token=3cb431a973a564d3bb554f9100aaa57b4eda35939baa82b7a6bf7d270bf31cc1',
+  PUSHPLUS_TOKEN: '',
 }

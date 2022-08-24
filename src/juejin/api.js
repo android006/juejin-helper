@@ -142,6 +142,28 @@ class Api extends Request {
   collectBug({ bug_time = '', bug_type = '' } = {}) {
     return this.post('/user_api/v1/bugfix/collect', { data: { bug_time, bug_type } })
   }
+
+  /**
+   * bugfix 比赛看板
+   * @returns {Promise<*>}
+   * {
+   *   competition_id: 场次id
+   * }
+   */
+  competition() {
+    return this.post('/user_api/v1/bugfix/competition', { data: {competition_id: '' } })
+  }
+
+  /**
+   * 获取 bugFix 本场个人详情
+   * @returns {Promise<*>}
+   * {
+   *   user_own_bug: 用户拥有bug数
+   * }
+   */
+  getBugfixUser(competition_id) {
+    return this.post('/user_api/v1/bugfix/user', {data: { competition_id }})
+  }
 }
 
 module.exports = Api
