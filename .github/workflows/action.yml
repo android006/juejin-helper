@@ -24,5 +24,4 @@ jobs:
           DINGDING_WEBHOOK: ${{ secrets.DINGDING_WEBHOOK }}
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
         run: |
-          npm install
           npm run serve
