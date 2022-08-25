@@ -134,23 +134,32 @@ const main = async (user) => {
   })
 }
 
-
-
-setInterval(() => {
-  // 获取当前小时 0-23
-  let hours = new Date().getHours();
-
-  // 获取当前分钟 0-59
-  let minutes = new Date().getMinutes();
-  if (hours === 7 && minutes === 30) {
-    USER.forEach(user => {
-      main(user).catch(error => {
-        pushMessage({
-          type: 'error',
-          message: error.stack,
-        })
+let testUserList = USER.filter(v => v.test);
+if (testUserList && testUserList.length) {
+  testUserList.forEach(user => {
+    main(user).catch(error => {
+      pushMessage({
+        type: 'error',
+        message: error.stack,
       })
     })
-  }
+  })
+} else {
+  setInterval(() => {
+    // 获取当前小时 0-23
+    let hours = new Date().getHours();
 
-}, 1000 * 60)
+    // 获取当前分钟 0-59
+    let minutes = new Date().getMinutes();
+    if (hours === 7 && minutes === 30) {
+      USER.forEach(user => {
+        main(user).catch(error => {
+          pushMessage({
+            type: 'error',
+            message: error.stack,
+          })
+        })
+      })
+    }
+  }, 1000 * 60)
+}
